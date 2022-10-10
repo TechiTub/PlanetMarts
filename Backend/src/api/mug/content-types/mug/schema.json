@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mugs",
+  "info": {
+    "singularName": "mug",
+    "pluralName": "mugs",
+    "displayName": "Mugs"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "Name",
+      "required": true
+    },
+    "Description": {
+      "type": "text",
+      "required": true
+    },
+    "Image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "Colour": {
+      "type": "enumeration",
+      "enum": [
+        "black",
+        "white"
+      ],
+      "required": true
+    },
+    "Price": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}

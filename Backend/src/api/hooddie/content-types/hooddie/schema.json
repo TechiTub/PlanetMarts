@@ -1,0 +1,129 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hooddies",
+  "info": {
+    "singularName": "hooddie",
+    "pluralName": "hooddies",
+    "displayName": "Hooddies",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "Name",
+      "required": true
+    },
+    "Description": {
+      "type": "text",
+      "required": true
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Colour": {
+      "type": "enumeration",
+      "enum": [
+        "red",
+        "blue",
+        "gray",
+        "white",
+        "black",
+        "pink",
+        "yellow",
+        "green",
+        "purple"
+      ],
+      "required": true
+    },
+    "Size": {
+      "type": "enumeration",
+      "enum": [
+        "XXXXX-SM",
+        "XXXX-SM",
+        "XXX-SM",
+        "XX-SM",
+        "X-SM",
+        "SM",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "XXXL",
+        "XXXXL",
+        "XXXXXL"
+      ],
+      "required": true
+    },
+    "Size2": {
+      "type": "enumeration",
+      "enum": [
+        "XXXXX-SM",
+        "XXXX-SM",
+        "XXX-SM",
+        "XX-SM",
+        "X-SM",
+        "SM",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "XXXL",
+        "XXXXL",
+        "XXXXXL"
+      ]
+    },
+    "Size3": {
+      "type": "enumeration",
+      "enum": [
+        "XXXXX-SM",
+        "XXXX-SM",
+        "XXX-SM",
+        "XX-SM",
+        "X-SM",
+        "SM",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "XXXL",
+        "XXXXL",
+        "XXXXXL"
+      ]
+    },
+    "Size4": {
+      "type": "enumeration",
+      "enum": [
+        "XXXXX-SM",
+        "XXXX-SM",
+        "XXX-SM",
+        "XX-SM",
+        "X-SM",
+        "SM",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "XXXL",
+        "XXXXL",
+        "XXXXXL"
+      ]
+    },
+    "Price": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}

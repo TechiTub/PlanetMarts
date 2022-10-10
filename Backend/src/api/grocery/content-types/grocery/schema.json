@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "groceries",
+  "info": {
+    "singularName": "grocery",
+    "pluralName": "groceries",
+    "displayName": "Grocery",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "Name",
+      "required": true
+    },
+    "Description": {
+      "type": "text",
+      "required": true
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Price": {
+      "type": "integer",
+      "required": true
+    },
+    "Quantity": {
+      "type": "enumeration",
+      "enum": [
+        "Gram",
+        "Kg"
+      ],
+      "required": true,
+      "default": "Gram"
+    },
+    "Quantity_Per_Kg_Gram": {
+      "type": "integer",
+      "required": true
+    },
+    "Quantity_Per_Kg_Gram_2": {
+      "type": "integer",
+      "required": false
+    },
+    "Quantity_Per_Kg_Gram_3": {
+      "type": "integer"
+    },
+    "Quantity_Per_Kg_Gram_4": {
+      "type": "integer"
+    },
+    "Category": {
+      "type": "string"
+    }
+  }
+}

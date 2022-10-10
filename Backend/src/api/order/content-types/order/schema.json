@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "singularName": "order",
+    "pluralName": "orders",
+    "displayName": "Order",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "User_Name": {
+      "type": "string"
+    },
+    "User_Email": {
+      "type": "email"
+    },
+    "Address": {
+      "type": "text"
+    },
+    "Phone_Number": {
+      "type": "integer"
+    },
+    "PinCode": {
+      "type": "integer"
+    },
+    "State": {
+      "type": "string"
+    },
+    "District": {
+      "type": "string"
+    },
+    "Payment_Status": {
+      "type": "string"
+    },
+    "Payment": {
+      "type": "integer"
+    },
+    "Order_Id": {
+      "type": "integer"
+    },
+    "Order": {
+      "type": "json"
+    }
+  }
+}

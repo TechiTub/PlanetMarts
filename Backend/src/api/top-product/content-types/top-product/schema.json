@@ -1,0 +1,110 @@
+{
+  "kind": "collectionType",
+  "collectionName": "top_products",
+  "info": {
+    "singularName": "top-product",
+    "pluralName": "top-products",
+    "displayName": "Top_Products",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "Name"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Price": {
+      "type": "integer"
+    },
+    "Qauntity_or_Size": {
+      "type": "enumeration",
+      "enum": [
+        "XXX-SM",
+        "XX-SM",
+        "X-SM",
+        "SM",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "XXXL",
+        "XXXXL",
+        "KG",
+        "Gram"
+      ]
+    },
+    "Quantity2": {
+      "type": "enumeration",
+      "enum": [
+        "XXX-SM",
+        "XX-SM",
+        "X-SM",
+        "SM",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "XXXL",
+        "XXXXL"
+      ]
+    },
+    "Quantity3": {
+      "type": "enumeration",
+      "enum": [
+        "XXX-SM",
+        "XX-SM",
+        "X-SM",
+        "SM",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "XXXL",
+        "XXXXL",
+        "KG",
+        "Gram"
+      ]
+    },
+    "Quantity4": {
+      "type": "enumeration",
+      "enum": [
+        "XXX-SM",
+        "XX-SM",
+        "X-SM",
+        "SM",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "XXXL",
+        "XXXXL",
+        "KG",
+        "Gram"
+      ]
+    },
+    "Quantity_Per_Kg_Gram": {
+      "type": "string"
+    },
+    "Category": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
